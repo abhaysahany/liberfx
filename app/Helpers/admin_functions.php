@@ -99,6 +99,18 @@ function totalCourseWallet()
 
 
 
+function totalMicroInvest()
+{
+    $sum = LendingDetail::where('plan', 'Micro')->sum('amount');
+    return $sum;
+}
+
+function todaysMicroInvest()
+{
+    $sum = LendingDetail::where('plan', 'Micro')->whereDate('created_at', date('Y-m-d'))->sum('amount');
+    return $sum;
+}
+
 function totalCoreInvest()
 {
     $sum = LendingDetail::where('plan', 'Core')->sum('amount');
@@ -137,7 +149,7 @@ function todaysDroidInvest()
 
 function todaysTotalInvest()
 {
-    $total = todaysCoreInvest() + todaysLimeInvest() + todaysDroidInvest();
+    $total = todaysMicroInvest() + todaysCoreInvest() + todaysLimeInvest() + todaysDroidInvest();
     return $total;
 }
 

@@ -97,7 +97,7 @@
         <!--**********************************
             Chat box start
         ***********************************-->
-       
+
         <!--**********************************
             Chat box End
         ***********************************-->
@@ -499,7 +499,8 @@
                             </g>
                         </svg>
                         <h4 class="mb-0 text-white"><span
-                                class="counter">{{ totalLevelMembers($data['memberid']) + $Fdata['team']}}</span></h4>
+                                class="counter">{{ totalLevelMembers($data['memberid']) + $Fdata['team'] }}</span>
+                        </h4>
                         <small>Team</small>
                     </div>
                     <div class="item-1">
@@ -515,7 +516,8 @@
                                     fill="#fff" fill-rule="nonzero" />
                             </g>
                         </svg>
-                        <h4 class="mb-0 text-white"><span class="counter">{{ $data['downline'] + $Fdata['direct'] }}</span></h4>
+                        <h4 class="mb-0 text-white"><span
+                                class="counter">{{ $data['downline'] + $Fdata['direct'] }}</span></h4>
                         <small>Directs</small>
                     </div>
                 </div>
@@ -528,8 +530,8 @@
         ***********************************-->
 
 
-        
-       <div class="bread-body" style="min-height: 0px !important;margin-top:80px;margin-bottom: 20px;">
+
+        <div class="bread-body" style="min-height: 0px !important;margin-top:80px;margin-bottom: 20px;">
             <!-- Page-titles (Breadcrumb) - Only covers content width -->
             <div class="page-titles" style="max-width: calc(100% - 20px); margin: 0 10px 5px 10px;">
                 <div class="d-flex align-items-center">
@@ -727,10 +729,9 @@
                                             <span class="me-3 bgl-primary text-primary">
                                                 <!-- <i class="ti-user"></i> -->
                                                 <svg id="icon-customers" xmlns="http://www.w3.org/2000/svg"
-                                                    width="30" height="30" viewBox="0 0 24 24"
-                                                    fill="none" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-user">
+                                                    width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-user">
                                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                                     <circle cx="12" cy="7" r="4"></circle>
                                                 </svg>
@@ -752,10 +753,9 @@
                                         <div class="media ai-icon">
                                             <span class="me-3 bgl-warning text-warning">
                                                 <svg id="icon-orders" xmlns="http://www.w3.org/2000/svg"
-                                                    width="30" height="30" viewBox="0 0 24 24"
-                                                    fill="none" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-file-text">
+                                                    width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-file-text">
                                                     <path
                                                         d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
                                                     </path>
@@ -782,10 +782,9 @@
                                         <div class="media ai-icon">
                                             <span class="me-3 bgl-danger text-danger">
                                                 <svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg"
-                                                    width="30" height="30" viewBox="0 0 24 24"
-                                                    fill="none" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-dollar-sign">
+                                                    width="30" height="30" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-dollar-sign">
                                                     <line x1="12" y1="1" x2="12"
                                                         y2="23"></line>
                                                     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
@@ -806,10 +805,9 @@
                                         <div class="media ai-icon">
                                             <span class="me-3 bgl-success text-success">
                                                 <svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg"
-                                                    width="24" height="24" viewBox="0 0 24 24"
-                                                    fill="none" stroke="currentColor" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round"
-                                                    class="feather feather-database">
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-database">
                                                     <ellipse cx="12" cy="5" rx="9"
                                                         ry="3"></ellipse>
                                                     <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
@@ -818,7 +816,8 @@
                                             </span>
                                             <div class="media-body">
                                                 <p class="mb-1">Fund Wallet</p>
-                                                <h5 class="mb-0">{{ $data['p2p_wallet'] + $Fdata['fund_wallet'] }}</h5>
+                                                <h5 class="mb-0">{{ $data['p2p_wallet'] + $Fdata['fund_wallet'] }}
+                                                </h5>
                                                 {{-- <span class="badge badge-success">-3.5%</span> --}}
                                             </div>
                                         </div>
@@ -827,7 +826,30 @@
                             </div>
                         </div>
                         <div class="row">
-                               <div class="col-xl-3  col-lg-6 col-sm-6">
+                            <div class="col-xl-4  col-lg-6 col-sm-6">
+                                <div class="widget-stat card bg-info">
+                                    <div class="card-body p-4">
+                                        <div class="media">
+                                            <span class="me-3">
+                                                <i class="la la-microchip"></i>
+                                            </span>
+                                            <div class="media-body text-white">
+                                                <p class="mb-1">Micro Investment</p>
+                                                <h3 class="text-white">
+                                                    ${{ totalMicroInvestment($data['memberid']) + ($Fdata['micro_invest'] ?? 0) - selfBizCoreDeinvest($data['memberid'], 'Micro') }}
+                                                </h3>
+                                                <div class="progress mb-2 bg-secondary">
+                                                    <div class="progress-bar progress-animated bg-white"
+                                                        style="width: 80%">
+                                                    </div>
+                                                </div>
+                                                <small>Total Micro Investment</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-sm-6">
                                 <div class="widget-stat card bg-primary">
                                     <div class="card-body  p-4">
                                         <div class="media">
@@ -836,7 +858,8 @@
                                             </span>
                                             <div class="media-body text-white">
                                                 <p class="mb-1">Core Investment</p>
-                                                <h3 class="text-white">${{ totalCoreInvestment($data['memberid']) + $Fdata['core_invest'] - selfBizCoreDeinvest($data['memberid'] , 'Core') }} 
+                                                <h3 class="text-white">
+                                                    ${{ totalCoreInvestment($data['memberid']) + $Fdata['core_invest'] - selfBizCoreDeinvest($data['memberid'], 'Core') }}
                                                 </h3>
                                                 <div class="progress mb-2 bg-secondary">
                                                     <div class="progress-bar progress-animated bg-white"
@@ -849,7 +872,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                            <div class="col-xl-4 col-lg-6 col-sm-6">
                                 <div class="widget-stat card bg-warning">
                                     <div class="card-body p-4">
                                         <div class="media">
@@ -859,7 +882,8 @@
                                             <div class="media-body text-white">
                                                 <p class="mb-1">Lime Investment</p>
                                                 <h3 class="text-white">
-                                                    ${{ totalLimeInvestment($data['memberid']) + $Fdata['lime_invest'] - selfBizCoreDeinvest($data['memberid'] , 'Lime') }}</h3>
+                                                    ${{ totalLimeInvestment($data['memberid']) + $Fdata['lime_invest'] - selfBizCoreDeinvest($data['memberid'], 'Lime') }}
+                                                </h3>
                                                 <div class="progress mb-2 bg-primary">
                                                     <div class="progress-bar progress-animated bg-white"
                                                         style="width: 50%">
@@ -871,7 +895,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                            <div class="col-xl-6 col-lg-6 col-sm-6">
                                 <div class="widget-stat card bg-secondary">
                                     <div class="card-body p-4">
                                         <div class="media">
@@ -881,7 +905,8 @@
                                             <div class="media-body text-white">
                                                 <p class="mb-1">Droid Investment</p>
                                                 <h3 class="text-white">
-                                                    ${{ totalDroidInvestment($data['memberid']) +  $Fdata['droid_invest'] - selfBizCoreDeinvest($data['memberid'] , 'Droid')}}</h3>
+                                                    ${{ totalDroidInvestment($data['memberid']) + $Fdata['droid_invest'] - selfBizCoreDeinvest($data['memberid'], 'Droid') }}
+                                                </h3>
                                                 <div class="progress mb-2 bg-primary">
                                                     <div class="progress-bar progress-animated bg-white"
                                                         style="width: 76%">
@@ -893,7 +918,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3  col-lg-6 col-sm-6">
+                            <div class="col-xl-6  col-lg-6 col-sm-6">
                                 <div class="widget-stat card bg-danger ">
                                     <div class="card-body p-4">
                                         <div class="media">
@@ -902,7 +927,8 @@
                                             </span>
                                             <div class="media-body text-white">
                                                 <p class="mb-1">Total Investment</p>
-                                                <h3 class="text-white">$ {{ totalInvestment($data['memberid']) + $Fdata['total_invest'] - selfBizDeinvest($data['memberid'])}}
+                                                <h3 class="text-white">$
+                                                    {{ totalInvestment($data['memberid']) + $Fdata['total_invest'] - selfBizDeinvest($data['memberid']) }}
                                                 </h3>
                                                 <div class="progress mb-2 bg-secondary">
                                                     <div class="progress-bar progress-animated bg-white"
@@ -920,12 +946,12 @@
                                 <div class="widget-stat card">
                                     <div class="card-body p-4">
                                         <h4 class="card-title">Total Income</h4>
-                                        <h3>$ {{ totalIncome($data['memberid']) + $Fdata['total_inc']}}</h3>
+                                        <h3>$ {{ totalIncome($data['memberid']) + $Fdata['total_inc'] }}</h3>
 
                                         {{-- <h3>$ {{ totalIncome($data['memberid']) + $Fdata['lending'] + $Fdata['level'] + $Fdata['rewards']}}</h3> --}}
                                         <div class="progress mb-2">
-                                            <div class="progress-bar progress-animated bg-primary"
-                                                style="width: 80%"></div>
+                                            <div class="progress-bar progress-animated bg-primary" style="width: 80%">
+                                            </div>
                                         </div>
                                         <small>Total of all Incomes</small>
                                     </div>
@@ -937,7 +963,7 @@
                                         <div class="card-body p-4">
                                             <h4 class="card-title">Level Income</h4>
                                             <h3>$
-                                                {{ totalLevelIncome($data['memberid']) + $Fdata['level']}}
+                                                {{ totalLevelIncome($data['memberid']) + $Fdata['level'] }}
                                             </h3>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar progress-animated bg-warning"
@@ -954,11 +980,10 @@
                                         <div class="card-body p-4">
                                             <h4 class="card-title">Lending Income</h4>
                                             <h3>$
-                                                {{ totalLendingIncome($data['memberid']) + $Fdata['lending']}}
+                                                {{ totalLendingIncome($data['memberid']) + $Fdata['lending'] }}
                                             </h3>
                                             <div class="progress mb-2">
-                                                <div class="progress-bar progress-animated bg-red"
-                                                    style="width: 76%">
+                                                <div class="progress-bar progress-animated bg-red" style="width: 76%">
                                                 </div>
                                             </div>
                                             <small>Total Lending Income</small>
@@ -972,7 +997,7 @@
                                         <div class="card-body p-4">
                                             <h4 class="card-title">Reward Income</h4>
                                             <h3>$
-                                                {{ totalRewardIncome($data['memberid']) + $Fdata['rewards']}}
+                                                {{ totalRewardIncome($data['memberid']) + $Fdata['rewards'] }}
                                             </h3>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar progress-animated bg-success"
@@ -987,11 +1012,11 @@
                                 <div class="widget-stat card">
                                     <div class="card-body p-4">
                                         <h4 class="card-title">Bonus</h4>
-                                        <h3>$ {{ 0 + $Fdata['bonus_inc']}}
+                                        <h3>$ {{ 0 + $Fdata['bonus_inc'] }}
                                         </h3>
                                         <div class="progress mb-2">
-                                            <div class="progress-bar progress-animated bg-danger"
-                                                style="width: 50%"></div>
+                                            <div class="progress-bar progress-animated bg-danger" style="width: 50%">
+                                            </div>
                                         </div>
                                         <small>Total Bonus</small>
                                     </div>
@@ -1048,8 +1073,8 @@
                                 @foreach ($dashVideos as $dashVideo)
                                     <div class="col-12 {{ $dashVideos->count() > 1 ? 'col-md-6' : '' }}">
                                         <div class="ratio ratio-16x9 bg-dark rounded overflow-hidden">
-                                            <video class="w-100 h-100" controls autoplay muted preload="auto" playsinline
-                                                aria-label="Dashboard video {{ $loop->iteration }}"
+                                            <video class="w-100 h-100" controls autoplay muted preload="auto"
+                                                playsinline aria-label="Dashboard video {{ $loop->iteration }}"
                                                 style="object-fit: contain;">
                                                 <source
                                                     src="{{ asset('uploads/dash-videos/' . basename($dashVideo->video)) }}"
@@ -1086,8 +1111,7 @@
                             </select>
                         </div>
                         <label class="form-label">Amount</label>
-                        <input type="number" class="form-control mb-3" id="exampleInputEmail4"
-                            placeholder="Rupee">
+                        <input type="number" class="form-control mb-3" id="exampleInputEmail4" placeholder="Rupee">
                         <label class="form-label">Card Holder Name</label>
                         <input type="number" class="form-control mb-3" id="exampleInputEmail5"
                             placeholder="Amount">

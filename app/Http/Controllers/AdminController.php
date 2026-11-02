@@ -1358,6 +1358,12 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+    public function MicroLendings()
+    {
+        $result['lendData'] = LendingDetail::where('plan', 'Micro')->get();
+        return view('admin.lending.Micro-lendings')->with($result);
+    }
+
     public function CoreLendings()
     {
         $result['lendData'] = LendingDetail::where('plan', 'Core')->get();

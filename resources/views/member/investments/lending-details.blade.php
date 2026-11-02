@@ -19,7 +19,11 @@
                                 <div class="basic-form">
                                     <ul class="nav nav-pills justify-content-center mb-4 light">
                                         <li class=" nav-item">
-                                            <a href="#navpills-1" class="nav-link active" data-bs-toggle="tab"
+                                            <a href="#navpills-micro" class="nav-link active" data-bs-toggle="tab"
+                                                aria-expanded="true">Micro Plan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#navpills-1" class="nav-link" data-bs-toggle="tab"
                                                 aria-expanded="false">Core Plan</a>
                                         </li>
                                         <li class="nav-item">
@@ -32,7 +36,18 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div id="navpills-1" class="tab-pane active">
+                                        <div id="navpills-micro" class="tab-pane active">
+                                            <div class="row">
+                                                @foreach ($ldata as $op_data)
+                                                    @if ($op_data['plan'] == 'Micro')
+                                                        <div class="col-xl-4">
+                                                            <x-FirstComponent :message="$op_data" />
+                                                        </div>
+                                                    @endif
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        <div id="navpills-1" class="tab-pane">
                                             <div class="row">
                                                 @foreach ($ldata as $op_data)
                                                     @if ($op_data['plan'] == 'Core')

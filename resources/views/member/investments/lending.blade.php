@@ -51,7 +51,11 @@
                                     <!--</div>-->
                                     <ul class="nav nav-pills justify-content-center mb-4 light lending-pills">
                                         <li class=" nav-item">
-                                            <a href="#navpills-1" class="nav-link active lending-plan-link lending-plan-core" data-bs-toggle="tab"
+                                            <a href="#navpills-micro" class="nav-link active lending-plan-link lending-plan-micro" data-bs-toggle="tab"
+                                                aria-expanded="true">Micro Plan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#navpills-1" class="nav-link lending-plan-link lending-plan-core" data-bs-toggle="tab"
                                                 aria-expanded="false">Core Plan</a>
                                         </li>
                                         <li class="nav-item">
@@ -60,11 +64,101 @@
                                         </li>
                                         <li class="nav-item">
                                             <a href="#navpills-3" class="nav-link lending-plan-link lending-plan-droid" data-bs-toggle="tab"
-                                                aria-expanded="true">Droid Plan</a>
+                                                aria-expanded="false">Droid Plan</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content lending-tab-content">
-                                        <div id="navpills-1" class="tab-pane active lending-tab-pane lending-core-pane">
+                                        <div id="navpills-micro" class="tab-pane active lending-tab-pane lending-micro-pane">
+                                            <div class="row g-3 px-3 justify-content-between lending-plan-row">
+                                                <div class="col-xl-6 lending-form-col">
+                                                    <form action="{{ route('MicroLending') }}" method="post"
+                                                        class="myForm lending-form lending-micro-form">
+                                                        @csrf
+                                                        <div class="mb-3 lending-field">
+                                                            <label class="form-label">I want to lend</label>
+                                                            <div class="input-group ">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Minimum Amount 50 USDT" name="amount"
+                                                                    id="micamount" required>
+                                                                <button class="btn btn-outline-primary dropdown-toggle"
+                                                                    type="button" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">USDT</button>
+
+                                                            </div>
+                                                            <span class="text-danger" id="micmsg"></span>
+                                                            @error('amount')
+                                                                <span class="text-danger">{{ $message }}</span>
+                                                            @enderror
+                                                        </div>
+
+                                                        <label class="form-label">Fund Wallet</label>
+                                                        <div class="input-group mb-3 lending-field">
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $data['p2p_wallet'] }}" readonly>
+                                                        </div>
+                                                        <label class="form-label">Liberfx PIN</label>
+                                                        <div class="input-group mb-3 lending-field">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Liberfx PIN" name="pin" required>
+
+                                                        </div>
+                                                        @error('pin')
+                                                            <span class="text-danger">{{ $message }}</span>
+                                                        @enderror
+                                                        <div class="mb-3 lending-action-row">
+                                                            <input type="hidden" class="form-control"
+                                                                value="{{ $data['memberid'] }}" name="memberid">
+                                                            <button class="btn btn-primary  btn-block mt-3 float-end subBtn lending-submit-btn lending-micro-btn"
+                                                                id="micbtn">Start
+                                                                Investment Now</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-xl-5 lending-timeline-col">
+                                                    <div id="DZ_W_TimeLine11_micro"
+                                                        class="widget-timeline dlab-scroll  px-4 my-4 style-1 height370 lending-timeline lending-micro-timeline">
+                                                        <ul class="timeline lending-timeline-list">
+                                                            <li>
+                                                                <div class="timeline-badge primary"></div>
+                                                                <a class="timeline-panel" href="#">
+                                                                    <span>Starting Of Lending</span>
+                                                                    <h6 class="mb-0">Micro Plan (Liberfx Lending)<strong
+                                                                            class="text-primary">$50</strong>.</h6>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <div class="timeline-badge info">
+                                                                </div>
+                                                                <a class="timeline-panel" href="#">
+                                                                    <span>Interest On Investment</span>
+                                                                    <h6 class="mb-0">10 % Monthly (Sunday Profit Closed)</h6>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <div class="timeline-badge success">
+                                                                </div>
+                                                                <a class="timeline-panel" href="#">
+                                                                    <span>Investment Duration</span>
+                                                                    <h6 class="mb-0">Total Investment duration <strong
+                                                                            class="text-danger">Unlimited.</strong>
+                                                                    </h6>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <div class="timeline-badge warning">
+                                                                </div>
+                                                                <a class="timeline-panel" href="#">
+                                                                    <span>Investment Break</span>
+                                                                    <h6 class="mb-0">Lending Break Option - No
+                                                                    </h6>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="navpills-1" class="tab-pane lending-tab-pane lending-core-pane">
                                             <!--<div class="lending-pane-banner core">-->
                                             <!--    <span class="name">Core Plan</span>-->
                                             <!--    <span class="meta">10% Monthly Return</span>-->

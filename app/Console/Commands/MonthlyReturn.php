@@ -54,7 +54,7 @@ class MonthlyReturn extends Command
                 $qry->interest = $interest;
                 $qry->save();
             } else {
-                if ($plan == 'Core') {
+                if ($plan == 'Core' || $plan == 'Micro') {
                     $oldLend = LendingMonthlyReturn::where([['memberid', $memberid], ['status', 'Active'], ['plan', $plan]])->update(['status' => 'Deactive']);
 
                     $var = new LendingMonthlyReturn();

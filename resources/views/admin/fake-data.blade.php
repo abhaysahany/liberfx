@@ -58,6 +58,7 @@
                                 <div class="form-group mb-3">
                                 <select name="plan_name" id="plan_name" class="form-control">
                                     <option value="">Select Plan</option>
+                                    <option value="Micro">Micro Plan</option>
                                     <option value="Core">Core Plan</option>
                                     <option value="Lime">Lime Plan</option>
                                     <option value="Droid">Droid Plan</option>

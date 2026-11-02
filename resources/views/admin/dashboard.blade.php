@@ -463,6 +463,25 @@
     </div>
 
     <div class="row">
+        {{-- Total Micro Investment --}}
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="modern-card widget-flat card-border-top-cyan">
+                <div class="card-body">
+                    <div class="float-end">
+                        <div class="modern-card-icon icon-theme-cyan">
+                            <i class="uil uil-processor"></i>
+                        </div>
+                    </div>
+                    <h5 class="modern-card-title mt-0" title="Growth">Total Micro Investment</h5>
+                    <h3 class="modern-card-value text-info">{{ totalMicroInvest() }}</h3>
+                    <p class="modern-card-meta">
+                        <span class="modern-card-meta-dot"></span>
+                        <span class="text-nowrap">Since last month</span>
+                    </p>
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div> <!-- end col-->
+
         {{-- Card 13: Total Core Investment --}}
         <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="modern-card widget-flat card-border-top-blue">
@@ -534,6 +553,25 @@
                     <h3 class="modern-card-value" style="color: #7c3aed;">{{ totalRewardIn() }}</h3>
                     <p class="modern-card-meta">
                         {{-- <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span> --}}
+                        <span class="modern-card-meta-dot"></span>
+                        <span class="text-nowrap">Since last month</span>
+                    </p>
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div> <!-- end col-->
+
+        {{-- Today's Micro Investment --}}
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="modern-card widget-flat card-border-top-cyan">
+                <div class="card-body">
+                    <div class="float-end">
+                        <div class="modern-card-icon icon-theme-cyan">
+                            <i class="uil uil-processor"></i>
+                        </div>
+                    </div>
+                    <h5 class="modern-card-title mt-0" title="Growth">Today's Micro Investment</h5>
+                    <h3 class="modern-card-value text-info">{{ todaysMicroInvest() }}</h3>
+                    <p class="modern-card-meta">
                         <span class="modern-card-meta-dot"></span>
                         <span class="text-nowrap">Since last month</span>
                     </p>

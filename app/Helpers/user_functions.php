@@ -139,6 +139,12 @@ function todaysLightLevelIncome($memberid)
     return $var;
 }
 
+function totalMicroInvestment($memberid)
+{
+    $sum = LendingDetail::where([['plan', 'Micro'], ['memberid', $memberid]])->sum('amount');
+    return $sum;
+}
+
 function totalCoreInvestment($memberid)
 {
     $sum = LendingDetail::where([['plan', 'Core'], ['memberid', $memberid]])->sum('amount');

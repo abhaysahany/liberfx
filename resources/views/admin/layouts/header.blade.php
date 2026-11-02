@@ -283,6 +283,9 @@
                         <div class="collapse" id="sidebarPages100">
                             <ul class="side-nav-second-level">
                                 <li>
+                                    <a href="{{ url('admin/lending/micro-lendings') }}">Micro Lendings</a>
+                                </li>
+                                <li>
                                     <a href="{{ url('admin/lending/core-lendings') }}">Core Lendings</a>
                                 </li>
                                 <li>

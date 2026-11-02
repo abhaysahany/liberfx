@@ -33,6 +33,69 @@ class LendingController extends Controller
         return view('member.investments.lending-details')->with($result);
     }
 
+    public function MicroLending(Request $request)
+    {
+        $request->validate([
+            'amount' => 'required',
+            'pin' => 'required',
+        ]);
+
+        $type = 'Micro';
+        $amount = $request->post('amount');
+        $txn_password = $request->post('pin');
+        $memberid = $request->post('memberid');
+        $mdata = MemberDetail::where('memberid', $memberid)->first();
+        $sponsorid = $mdata->sponsorid;
+        if (!Hash::check($txn_password, $mdata->txn_password)) {
+            session()->flash('failedMsg', 'PIN do not match. Please try again');
+            return redirect()->back();
+        }
+        if ($amount < 50) {
+            session()->flash('failedMsg', 'Minimum investment amount is $50.');
+            return redirect()->back();
+        }
+        if ($amount % 50 != 0) {
+            session()->flash('failedMsg', 'Amount must be multiple of $50');
+            return redirect()->back();
+        }
+        if ($amount > $mdata->p2p_wallet) {
+            session()->flash('failedMsg', 'You do not have enough amount in your wallet.');
+            return redirect()->back();
+        }
+
+        if (date('Y-m-d H:i:s') > date('Y-m-d 23:40:00')) {
+            $start_time = date('Y-m-d 23:40:00', strtotime('+1day'));
+        } else {
+            $start_time = date('Y-m-d H:i:s', strtotime('+1day'));
+        }
+
+        $qry = new LendingDetail();
+        $qry->start_date = $start_time;
+        $qry->memberid = $memberid;
+        $qry->plan = $type;
+        $qry->amount = $amount;
+        $qry->total_duration = 0;
+        $qry->interest = 10;
+        $qry->lock_time = 0;
+        $qry->close_date = null;
+        $qry->status = 'Active';
+        $qry->save();
+
+        $wallet = $mdata->p2p_wallet;
+        $mdata->p2p_wallet -= $amount;
+        $mdata->team_invest += $amount;
+        $mdata->self_invest += $amount;
+        $mdata->monthly_invest += $amount;
+        $mdata->save();
+        walletTransfer($memberid, $amount, 'credit', $wallet, '' . $type . ' Lending Created', 'Lending amount deducted from wallet');
+        team_invest_update($sponsorid, $amount);
+        monthly_invest_update($sponsorid, $amount);
+        pl_downline_update($memberid);
+
+        session()->flash('successMsg', 'Micro Lending created successfully.');
+        return redirect()->back();
+    }
+
     public function CoreLending(Request $request)
     {
         $request->validate([
@@ -443,6 +506,11 @@ class LendingController extends Controller
             return redirect()->back();
         }
 
+        if ($var->plan == 'Micro') {
+            session()->flash('ErrorMsg', 'Lending break option is not available for Micro Plan.');
+            return redirect()->back();
+        }
+
         $deduction = Deduction::find(1);
         if (!$deduction || !$deduction->lending_break_status) {
             session()->flash('ErrorMsg', 'Lending break is disabled right now.');
@@ -513,6 +581,13 @@ class LendingController extends Controller
             return [
                 'allowed' => false,
                 'next_date' => $investDate->format('d-m-Y'),
+            ];
+        }
+
+        if ($lending->plan == 'Micro') {
+            return [
+                'allowed' => false,
+                'next_date' => 'Not Available',
             ];
         }
 

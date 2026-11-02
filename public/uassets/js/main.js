@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    $('#micamount').on('input', function () {
+        var amount = parseInt($(this).val());
+
+        if (amount < 50) {
+            $('#micmsg').html('Minimum amount must be $50');
+            $('#micbtn').prop('disabled', true);
+        } else if (amount % 50 != 0) {
+            $('#micmsg').html('Investment amount must be in multiple of $50');
+            $('#micbtn').prop('disabled', true);
+        } else {
+            $('#micmsg').html('');
+            $('#micbtn').prop('disabled', false);
+        }
+    })
     $('#lylamount').on('input', function () {
         var amount = parseInt($(this).val());
 

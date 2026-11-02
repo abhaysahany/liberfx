@@ -147,6 +147,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'AdminAuth'], function () {
     // Route::get('/lending/break-request', [AdminController::class, 'breakData']);
     // Route::get('/lending/break-details', [AdminController::class, 'breakDetail']);
     
+    Route::get('/lending/micro-lendings', [AdminController::class, 'MicroLendings']);
     Route::get('/lending/core-lendings', [AdminController::class, 'CoreLendings']);
     Route::get('/lending/lime-lendings', [AdminController::class, 'LimeLendings']);
     Route::get('/lending/droid-lendings', [AdminController::class, 'DroidLendings']);
@@ -350,6 +351,7 @@ Route::group(['prefix' => 'member', 'middleware' => 'MemberAuth'], function () {
     //lending section
     Route::get('/lending', [LendingController::class, 'lending']);
     Route::get('/lending-details', [LendingController::class, 'lendingDetails']);
+    Route::post('MicroLending', [LendingController::class, 'MicroLending'])->name('MicroLending');
     Route::post('CoreLending', [LendingController::class, 'CoreLending'])->name('CoreLending');
     Route::post('LimeLending', [LendingController::class, 'LimeLending'])->name('LimeLending');
     Route::post('DroidLending', [LendingController::class, 'DroidLending'])->name('DroidLending');
