@@ -1,0 +1,2185 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap');
+
+        :root {
+            --trade-bg: #060f1f;
+            --trade-surface: #0d1d38;
+            --trade-surface-2: #102447;
+            --trade-border: rgba(117, 161, 255, 0.25);
+            --trade-text: #e7efff;
+            --trade-muted: #9eb2d9;
+            --trade-blue-a: #2b66ea;
+            --trade-blue-b: #1eb6ff;
+            --trade-green-a: #0b9d6d;
+            --trade-green-b: #25d08b;
+            --trade-orange-a: #e3962f;
+            --trade-orange-b: #f4c44d;
+            --trade-red-a: #d44457;
+            --trade-red-b: #ff724d;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--trade-text);
+            background:
+                radial-gradient(900px 500px at 95% -5%, rgba(43, 102, 234, 0.18), transparent 60%),
+                radial-gradient(800px 500px at -10% 5%, rgba(30, 182, 255, 0.12), transparent 60%),
+                var(--trade-bg);
+        }
+
+        #main-wrapper {
+            background: transparent;
+        }
+
+        .header .header-content,
+        .page-titles {
+            border: 1px solid var(--trade-border);
+            border-radius: 14px;
+            background: linear-gradient(140deg, rgba(16, 36, 71, 0.9) 0%, rgba(13, 29, 56, 0.9) 100%);
+            backdrop-filter: blur(6px);
+        }
+
+        .header .header-content {
+            margin: 8px 14px 0;
+        }
+
+        .page-titles {
+            margin: 10px 14px 0;
+            padding: 14px 18px;
+        }
+
+        .page-titles h2 {
+            font-weight: 800;
+            letter-spacing: 0.2px;
+        }
+
+        .page-titles p {
+            color: #ffd88b !important;
+            font-weight: 700;
+        }
+
+        .nav-header,
+        .dlabnav {
+            background: linear-gradient(180deg, #0d213f 0%, #0a1a33 100%);
+            border-right: 1px solid var(--trade-border);
+        }
+
+        .dlabnav .wallet-box {
+            border-radius: 14px;
+            border: 1px solid var(--trade-border);
+            background: linear-gradient(145deg, rgba(43, 102, 234, 0.3) 0%, rgba(30, 182, 255, 0.16) 100%);
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            border-radius: 16px;
+            border: 1px solid var(--trade-border);
+            background: linear-gradient(150deg, rgba(16, 36, 71, 0.9) 0%, rgba(13, 29, 56, 0.9) 100%);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+            overflow: hidden;
+        }
+
+        .card-header,
+        .card-footer {
+            border-color: rgba(117, 161, 255, 0.18) !important;
+            background: rgba(7, 16, 32, 0.25);
+        }
+
+        .widget-stat.card {
+            border: 0;
+        }
+
+        .widget-stat.card.bg-primary {
+            background: linear-gradient(135deg, var(--trade-blue-a) 0%, var(--trade-blue-b) 100%) !important;
+        }
+
+        .widget-stat.card.bg-warning {
+            background: linear-gradient(135deg, var(--trade-orange-a) 0%, var(--trade-orange-b) 100%) !important;
+        }
+
+        .widget-stat.card.bg-danger {
+            background: linear-gradient(135deg, var(--trade-red-a) 0%, var(--trade-red-b) 100%) !important;
+        }
+
+        .widget-stat .progress {
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.2) !important;
+        }
+
+        .widget-stat .progress-bar {
+            border-radius: 999px;
+        }
+
+        .form-control,
+        .default-select,
+        .bootstrap-select .dropdown-toggle,
+        .search-area .form-control,
+        .search-area-2 .form-control {
+            border-radius: 11px !important;
+            border: 1px solid rgba(117, 161, 255, 0.35) !important;
+            background: linear-gradient(145deg, rgba(16, 36, 71, 0.78) 0%, rgba(13, 29, 56, 0.78) 100%) !important;
+            color: var(--trade-text) !important;
+            box-shadow: none !important;
+        }
+
+        .form-control::placeholder {
+            color: #8ea5d4 !important;
+        }
+
+        .search-area .input-group-text,
+        .search-area-2 .input-group-text {
+            border: 1px solid rgba(117, 161, 255, 0.35) !important;
+            background: rgba(16, 36, 71, 0.78) !important;
+        }
+
+        .form-control:focus,
+        .bootstrap-select .dropdown-toggle:focus {
+            border-color: rgba(103, 173, 255, 0.85) !important;
+            box-shadow: 0 0 0 3px rgba(43, 102, 234, 0.2) !important;
+        }
+
+        .table-responsive {
+            border: 1px solid rgba(117, 161, 255, 0.22);
+            border-radius: 14px;
+            background: rgba(10, 22, 43, 0.52);
+            overflow: hidden;
+        }
+
+        .table {
+            color: #dce8ff;
+            margin-bottom: 0;
+        }
+
+        .table thead th {
+            border-top: 0;
+            border-bottom-color: rgba(117, 161, 255, 0.24) !important;
+            background: rgba(43, 102, 234, 0.12);
+            color: #a8c0ef;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.74rem;
+            font-weight: 700;
+        }
+
+        .table td,
+        .table th {
+            border-color: rgba(117, 161, 255, 0.14) !important;
+            vertical-align: middle;
+        }
+
+        .table tbody tr:hover {
+            background: rgba(43, 102, 234, 0.08);
+        }
+
+        .alert {
+            border-radius: 12px;
+            border: 1px solid rgba(117, 161, 255, 0.3);
+            background: linear-gradient(145deg, rgba(36, 78, 150, 0.24) 0%, rgba(14, 30, 56, 0.45) 100%);
+            color: #dce8ff;
+        }
+
+        .btn {
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            border: 0;
+            background: linear-gradient(135deg, var(--trade-blue-a) 0%, var(--trade-blue-b) 100%);
+            box-shadow: 0 10px 18px rgba(43, 102, 234, 0.28);
+        }
+
+        .btn-success {
+            border: 0;
+            background: linear-gradient(135deg, var(--trade-green-a) 0%, var(--trade-green-b) 100%);
+        }
+
+        .dropdown-menu {
+            border: 1px solid rgba(117, 161, 255, 0.25);
+            border-radius: 12px;
+            background: linear-gradient(160deg, #0f2345 0%, #0b1a34 100%);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32);
+        }
+
+        .dropdown-item {
+            color: #d8e6ff;
+            border-radius: 8px;
+        }
+
+        .dropdown-item:hover {
+            color: #fff;
+            background: rgba(43, 102, 234, 0.2);
+        }
+
+        .text-muted,
+        small,
+        .small {
+            color: var(--trade-muted) !important;
+        }
+
+        @media (max-width: 991px) {
+            .header .header-content,
+            .page-titles {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+}
+
+/* Dashboard-specific polish */
+body.member-modern .dashboard-content {
+    padding-top: 14px;
+}
+
+body.member-modern .dashboard-content .main-card .profile-hero-card {
+    border: 1px solid rgba(123, 167, 255, 0.28);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(23, 48, 88, 0.82) 0%, rgba(14, 30, 56, 0.86) 100%);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .dashboard-content .main-card .card-body.d-flex {
+    gap: 18px;
+}
+
+body.member-modern .dashboard-content .main-card .avatar.avatar-xxl {
+    width: 96px;
+    height: 96px;
+    border: 3px solid rgba(143, 183, 255, 0.45) !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.member-modern .dashboard-content .main-card .card-title {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .dashboard-content .main-card .d-flex.flex-wrap.pt-4 {
+    gap: 10px;
+}
+
+body.member-modern .dashboard-content .main-card .d-flex.flex-wrap.pt-4 > .d-flex.align-items-center {
+    padding: 7px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(123, 167, 255, 0.2);
+    background: rgba(26, 47, 83, 0.55);
+}
+
+body.member-modern .dashboard-content .main-card .d-flex.flex-wrap.pt-4 h5 {
+    font-size: 0.95rem;
+}
+
+body.member-modern .dashboard-content .fx-widget-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(123, 167, 255, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+}
+
+body.member-modern .dashboard-content .stat-card {
+    border-radius: 16px;
+    border: 0;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.28);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+body.member-modern .dashboard-content .stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 36px rgba(0, 0, 0, 0.34);
+}
+
+body.member-modern .dashboard-content .stat-card .media-body p,
+body.member-modern .dashboard-content .stat-card .media-body h3,
+body.member-modern .dashboard-content .stat-card .media-body small {
+    color: #ffffff !important;
+}
+
+body.member-modern .dashboard-content .stat-card .progress {
+    background: rgba(255, 255, 255, 0.22) !important;
+    border-radius: 999px;
+}
+
+body.member-modern .dashboard-content .stat-card .progress .progress-bar {
+    border-radius: 999px;
+}
+
+body.member-modern .dashboard-content .stat-trades {
+    background: linear-gradient(135deg, #2f66e9 0%, #20b7ff 100%) !important;
+}
+
+body.member-modern .dashboard-content .stat-profit {
+    background: linear-gradient(135deg, #0e9d6c 0%, #2dd49b 100%) !important;
+}
+
+body.member-modern .dashboard-content .stat-loss {
+    background: linear-gradient(135deg, #d74b60 0%, #ff754e 100%) !important;
+}
+
+body.member-modern .dashboard-content .referral-banner {
+    border-radius: 14px;
+    border: 1px solid rgba(123, 167, 255, 0.35);
+    background: linear-gradient(145deg, rgba(42, 80, 151, 0.3) 0%, rgba(18, 40, 73, 0.48) 100%);
+    color: #e4edff;
+}
+
+body.member-modern .dashboard-content .referral-banner #code {
+    color: #cfe0ff;
+    font-weight: 700;
+}
+
+body.member-modern .dashboard-content .copy-ref-btn {
+    border-radius: 999px;
+    border: 1px solid rgba(146, 182, 255, 0.45);
+    background: rgba(147, 183, 255, 0.18);
+    padding: 5px 12px;
+    font-weight: 700;
+}
+
+body.member-modern .dashboard-content .copy-ref-btn:hover {
+    background: rgba(147, 183, 255, 0.28);
+}
+
+@media (max-width: 991px) {
+    body.member-modern .dashboard-content .main-card .card-body.d-flex {
+        flex-direction: column;
+    }
+
+    body.member-modern .dashboard-content .main-card .card-body .w-100.ps-4 {
+        padding-left: 0 !important;
+    }
+}
+
+/* Exchange page refinements */
+body.member-modern .exchange-page {
+    padding-top: 12px;
+}
+
+body.member-modern .exchange-page .exchange-top-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(20, 43, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+}
+
+body.member-modern .exchange-page .exchange-top-card .form-control {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .exchange-page .exchange-top-card select.form-control {
+    color: #e7efff !important;
+}
+
+body.member-modern .exchange-page .exchange-top-card select.form-control option {
+    color: #12284a !important;
+    background: #ffffff !important;
+}
+
+body.member-modern .exchange-page .exchange-chart-col {
+    min-height: 72vh;
+}
+
+body.member-modern .exchange-page .exchange-tv-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .exchange-page .exchange-order-card {
+    border-radius: 16px;
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.3);
+}
+
+body.member-modern .exchange-page .buy-order-card {
+    background: linear-gradient(155deg, rgba(14, 154, 107, 0.18) 0%, rgba(14, 35, 64, 0.88) 55%);
+}
+
+body.member-modern .exchange-page .sell-order-card {
+    background: linear-gradient(155deg, rgba(215, 74, 95, 0.17) 0%, rgba(14, 35, 64, 0.88) 55%);
+}
+
+body.member-modern .exchange-page .exchange-order-card .card-header {
+    border-bottom: 1px solid rgba(128, 170, 255, 0.18) !important;
+}
+
+body.member-modern .exchange-page .exchange-order-card .card-title {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .exchange-page .exchange-input-group .input-group-text {
+    font-weight: 700;
+    min-width: 78px;
+    justify-content: center;
+}
+
+body.member-modern .exchange-page .exchange-input-group .form-control[readonly] {
+    color: #c8daff !important;
+}
+
+body.member-modern .exchange-page .exchange-action-btn {
+    border-radius: 10px;
+    min-width: 170px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn {
+    background: linear-gradient(135deg, #0f9a6b 0%, #30d59a 100%) !important;
+    border: 0 !important;
+    color: #ffffff !important;
+}
+
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn {
+    background: linear-gradient(135deg, #d6485c 0%, #ff744e 100%) !important;
+    border: 0 !important;
+    color: #ffffff !important;
+}
+
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn:hover,
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn:focus,
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn:active,
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn:focus-visible,
+body.member-modern .exchange-page .buy-order-card .exchange-action-btn.active {
+    background: linear-gradient(135deg, #0f9a6b 0%, #30d59a 100%) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+}
+
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn:hover,
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn:focus,
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn:active,
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn:focus-visible,
+body.member-modern .exchange-page .sell-order-card .exchange-action-btn.active {
+    background: linear-gradient(135deg, #d6485c 0%, #ff744e 100%) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .exchange-page .exchange-chart-col {
+        min-height: 58vh;
+    }
+
+    body.member-modern .exchange-page .exchange-action-btn {
+        min-width: 100%;
+    }
+}
+
+/* News page refinements */
+body.member-modern .news-page {
+    padding-top: 12px;
+}
+
+body.member-modern .news-page .news-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .news-page .news-post-item {
+    border-bottom: 1px dashed rgba(121, 163, 245, 0.45) !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 8px;
+}
+
+body.member-modern .news-page .news-post-item:last-child {
+    border-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+body.member-modern .news-page .post-title {
+    text-decoration: none;
+}
+
+body.member-modern .news-page .post-title h3 {
+    color: #e5efff;
+    font-weight: 800;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    margin-bottom: 4px;
+}
+
+body.member-modern .news-page .news-post-meta {
+    color: #9bb2dc;
+    font-size: 0.85rem;
+}
+
+body.member-modern .news-page .news-post-image {
+    border-radius: 12px !important;
+    border: 1px solid rgba(128, 170, 255, 0.2);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.22);
+    margin-bottom: 14px;
+}
+
+body.member-modern .news-page .news-post-desc {
+    color: #cfe0ff;
+    line-height: 1.75;
+    font-size: 0.98rem;
+    margin-bottom: 0;
+}
+
+body.member-modern .news-page .news-empty {
+    color: #d9e8ff;
+    text-align: center;
+    padding: 36px 0;
+}
+
+/* Assets page refinements */
+body.member-modern .assets-page {
+    padding-top: 12px;
+}
+
+body.member-modern .assets-page .assets-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .assets-page .assets-title {
+    color: #e6f0ff;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .assets-page .alert {
+    border-radius: 12px;
+    border: 1px solid rgba(128, 170, 255, 0.3);
+}
+
+body.member-modern .assets-page .trade-table-wrap {
+    padding-top: 8px;
+    overflow: auto;
+}
+
+body.member-modern .assets-page .priceTable {
+    border-color: rgba(128, 170, 255, 0.24) !important;
+    background: rgba(9, 21, 41, 0.45);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+body.member-modern .assets-page .priceTable thead th {
+    background: rgba(47, 102, 233, 0.14);
+    color: #a9c1ee;
+    border-color: rgba(128, 170, 255, 0.24) !important;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    font-weight: 700;
+}
+
+body.member-modern .assets-page .priceTable tbody td {
+    color: #dbe8ff;
+    border-color: rgba(128, 170, 255, 0.14) !important;
+    vertical-align: middle;
+}
+
+body.member-modern .assets-page .priceTable tbody tr:hover {
+    background: rgba(47, 102, 233, 0.08);
+}
+
+body.member-modern .assets-page .priceTable tbody td:first-child {
+    font-weight: 700;
+    color: #e6f0ff;
+}
+
+body.member-modern .assets-page .priceTable tbody td.text-success {
+    color: #3cdd99 !important;
+    font-weight: 700;
+}
+
+body.member-modern .assets-page .trade-action-col {
+    width: 20%;
+    min-width: 190px;
+}
+
+body.member-modern .assets-page .priceTable tbody td:last-child .btn,
+body.member-modern .assets-page .trade-action-btn {
+    min-width: 82px;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .assets-page .priceTable tbody td:last-child .btn-success {
+    background: linear-gradient(135deg, #0f9a6b 0%, #30d59a 100%) !important;
+    border: 0 !important;
+    color: #fff !important;
+}
+
+body.member-modern .assets-page .priceTable tbody td:last-child .btn-danger {
+    background: linear-gradient(135deg, #d6485c 0%, #ff744e 100%) !important;
+    border: 0 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .assets-page .priceTable tbody td:last-child {
+        white-space: nowrap;
+    }
+}
+
+/* Orders page refinements */
+body.member-modern .orders-page {
+    padding-top: 12px;
+}
+
+body.member-modern .orders-page .orders-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .orders-page .orders-title {
+    color: #e6f0ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .orders-page .orders-table-wrap {
+    overflow: auto;
+    padding-top: 6px;
+}
+
+body.member-modern .orders-page .orders-pills .nav-link {
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.28);
+    color: #c7dcff;
+    font-weight: 700;
+    padding: 7px 16px;
+    background: rgba(15, 32, 59, 0.4);
+}
+
+body.member-modern .orders-page .orders-pills .nav-link.active {
+    color: #ffffff;
+    border-color: rgba(128, 170, 255, 0.42);
+    background: linear-gradient(135deg, rgba(47, 102, 233, 0.82) 0%, rgba(34, 182, 255, 0.75) 100%);
+}
+
+body.member-modern .orders-page .orders-table {
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+body.member-modern .orders-page .orders-table thead th {
+    background: rgba(47, 102, 233, 0.14);
+    color: #a9c1ee;
+    border-color: rgba(128, 170, 255, 0.24) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+body.member-modern .orders-page .orders-table tbody td {
+    color: #dbe8ff;
+    border-color: rgba(128, 170, 255, 0.14) !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+body.member-modern .orders-page .orders-table tbody tr:hover {
+    background: rgba(47, 102, 233, 0.08);
+}
+
+body.member-modern .orders-page .orders-table .badge {
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+/* Trading details page refinements */
+body.member-modern .trading-details-page {
+    padding-top: 12px;
+}
+
+body.member-modern .trading-details-page .trading-details-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .trading-details-page .trading-details-title {
+    color: #e6f0ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .trading-details-page .trading-details-wrap {
+    overflow: auto;
+    padding-top: 8px;
+}
+
+body.member-modern .trading-details-page .trading-details-table {
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(9, 21, 41, 0.45);
+}
+
+body.member-modern .trading-details-page .trading-details-table thead th {
+    background: rgba(47, 102, 233, 0.14);
+    color: #a9c1ee;
+    border-color: rgba(128, 170, 255, 0.24) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+body.member-modern .trading-details-page .trading-details-table tbody td {
+    color: #dbe8ff;
+    border-color: rgba(128, 170, 255, 0.14) !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+body.member-modern .trading-details-page .trading-details-table tbody tr:hover {
+    background: rgba(47, 102, 233, 0.08);
+}
+
+/* Copy summary page refinements */
+body.member-modern .copy-summary-page {
+    padding-top: 12px;
+}
+
+body.member-modern .copy-summary-page .copy-summary-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .copy-summary-page .copy-summary-title {
+    color: #e6f0ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .copy-summary-page .copy-summary-wrap {
+    overflow: auto;
+    padding-top: 8px;
+}
+
+body.member-modern .copy-summary-page .copy-summary-table {
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(9, 21, 41, 0.45);
+}
+
+body.member-modern .copy-summary-page .copy-summary-table thead th {
+    background: rgba(47, 102, 233, 0.14);
+    color: #a9c1ee;
+    border-color: rgba(128, 170, 255, 0.24) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+body.member-modern .copy-summary-page .copy-summary-table tbody td {
+    color: #dbe8ff;
+    border-color: rgba(128, 170, 255, 0.14) !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+body.member-modern .copy-summary-page .copy-summary-table tbody tr:hover {
+    background: rgba(47, 102, 233, 0.08);
+}
+
+body.member-modern .copy-summary-page .copy-summary-pay-btn {
+    border-radius: 8px;
+    font-weight: 700;
+    min-width: 96px;
+}
+
+/* Voxa course page refinements */
+body.member-modern .voxa-course-page {
+    padding-top: 12px;
+}
+
+body.member-modern .voxa-course-page .course-link-card {
+    display: block;
+    text-decoration: none;
+}
+
+body.member-modern .voxa-course-page .voxa-course-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.28);
+    height: 100%;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+body.member-modern .voxa-course-page .voxa-course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 36px rgba(0, 0, 0, 0.34);
+}
+
+body.member-modern .voxa-course-page .course-badge-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.35);
+    background: rgba(47, 102, 233, 0.14);
+    color: #b6cefa !important;
+    font-weight: 700;
+    font-size: 0.79rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+body.member-modern .voxa-course-page .voxa-course-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px !important;
+    border: 1px solid rgba(128, 170, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+body.member-modern .voxa-course-page .course-title a {
+    color: #e6f0ff !important;
+    font-weight: 800;
+    font-size: 1.24rem;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+body.member-modern .voxa-course-page .course-desc {
+    color: #cfe0ff;
+    line-height: 1.65;
+    min-height: 52px;
+}
+
+body.member-modern .voxa-course-page .course-price {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #41d79d !important;
+    font-weight: 800;
+    font-size: 1.35rem;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .voxa-course-page .voxa-course-image {
+        height: 200px;
+    }
+}
+
+/* Course history page refinements */
+body.member-modern .course-history-page {
+    padding-top: 12px;
+}
+
+body.member-modern .course-history-page .course-history-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .course-history-page .course-history-title {
+    color: #e6f0ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .course-history-page .course-history-wrap {
+    padding-top: 8px;
+}
+
+body.member-modern .course-history-page .course-history-item-card {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 14px;
+}
+
+body.member-modern .course-history-page .course-history-item {
+    position: relative;
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgba(9, 21, 45, 0.82) 0%, rgba(13, 31, 57, 0.88) 100%);
+    padding: 16px 18px;
+    overflow: hidden;
+}
+
+body.member-modern .course-history-page .course-badge {
+    border-radius: 999px;
+    border: 1px solid rgba(231, 169, 67, 0.42);
+    background: rgba(231, 169, 67, 0.18);
+    color: #ffd890;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+body.member-modern .course-history-page .course-history-meta p {
+    color: #aac0ea;
+    margin-bottom: 10px !important;
+}
+
+body.member-modern .course-history-page .course-detail-line {
+    margin-bottom: 6px !important;
+}
+
+body.member-modern .course-history-page .course-detail-line .text-bla {
+    color: #dbe8ff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+body.member-modern .course-history-page .detail-dot circle {
+    fill: #9bc1ff;
+}
+
+body.member-modern .course-history-page .course-detail-line .badge {
+    border-radius: 999px;
+    padding: 6px 10px !important;
+    font-weight: 700;
+}
+
+body.member-modern .course-history-page .course-history-shape {
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+    opacity: 0.88;
+}
+
+body.member-modern .course-history-page .course-history-shape .courseImg {
+    padding-right: 10px;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .course-history-page .course-history-shape {
+        position: static;
+        margin-top: 12px;
+        text-align: right;
+    }
+}
+
+/* Course buy page refinements */
+body.member-modern .course-buy-page {
+    padding-top: 12px;
+}
+
+body.member-modern .course-buy-page .course-buy-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(19, 42, 78, 0.86) 0%, rgba(12, 27, 50, 0.86) 100%);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.28);
+}
+
+body.member-modern .course-buy-page .course-buy-badge-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.35);
+    background: rgba(47, 102, 233, 0.14);
+    color: #b6cefa !important;
+    font-weight: 700;
+    font-size: 0.79rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+body.member-modern .course-buy-page .course-buy-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px !important;
+    border: 1px solid rgba(128, 170, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+body.member-modern .course-buy-page .course-buy-title a {
+    color: #e6f0ff !important;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+body.member-modern .course-buy-page .course-buy-desc {
+    color: #cfe0ff;
+    line-height: 1.6;
+}
+
+body.member-modern .course-buy-page .course-buy-price {
+    color: #41d79d !important;
+    font-weight: 800;
+}
+
+body.member-modern .course-buy-page .course-buy-wallet-label {
+    color: #cfe0ff !important;
+    font-weight: 700;
+}
+
+body.member-modern .course-buy-page .course-buy-wallet-value {
+    color: #8fc0ff !important;
+    font-weight: 800;
+}
+
+body.member-modern .course-buy-page .course-buy-otp-btn {
+    text-decoration: none;
+    border: 0 !important;
+    min-width: 110px;
+    justify-content: center;
+    font-weight: 700;
+}
+
+body.member-modern .course-buy-page .course-buy-submit-btn {
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .course-buy-page .course-buy-image {
+        height: 200px;
+    }
+}
+
+/* Lending page refinements */
+body.member-modern .lending-page {
+    padding-top: 12px;
+}
+
+body.member-modern .lending-page .lending-main-card {
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 16px;
+    background: linear-gradient(155deg, rgba(20, 44, 82, 0.92) 0%, rgba(10, 24, 46, 0.92) 100%);
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.32);
+}
+
+body.member-modern .lending-page .lending-shell-card {
+    overflow: visible;
+    position: relative;
+}
+
+body.member-modern .lending-page .lending-shell-card::before {
+    content: "";
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    top: -14px;
+    height: 40px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, rgba(46, 104, 232, 0.45) 0%, rgba(35, 196, 255, 0.28) 45%, rgba(15, 154, 107, 0.24) 100%);
+    filter: blur(18px);
+    z-index: -1;
+}
+
+body.member-modern .lending-page .lending-alert {
+    border: 1px solid rgba(128, 170, 255, 0.28);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+body.member-modern .lending-page .lending-header {
+    padding: 16px 20px;
+}
+
+body.member-modern .lending-page .lending-heading-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+}
+
+body.member-modern .lending-page .lending-main-card .card-title {
+    color: #e6f0ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    color: #9fb7e2;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+body.member-modern .lending-page .lending-body {
+    padding: 24px 22px 26px;
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+body.member-modern .lending-page .lending-market-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+body.member-modern .lending-page .lending-market-strip .pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.26);
+    color: #bfd5fa;
+    background: rgba(25, 54, 98, 0.32);
+    padding: 6px 11px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.18px;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    border: 1px solid rgba(128, 170, 255, 0.26);
+    border-radius: 12px;
+    padding: 11px 12px;
+    background: linear-gradient(150deg, rgba(12, 27, 50, 0.82) 0%, rgba(9, 21, 40, 0.82) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 1px 0 rgba(200, 221, 255, 0.06);
+}
+
+body.member-modern .lending-page .lending-glance-item .label {
+    color: #abc4ef;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+body.member-modern .lending-page .lending-glance-item strong {
+    font-size: 0.9rem;
+    color: #e8f1ff;
+}
+
+body.member-modern .lending-page .lending-glance-item.core {
+    border-color: rgba(53, 129, 255, 0.4);
+}
+
+body.member-modern .lending-page .lending-glance-item.lime {
+    border-color: rgba(35, 197, 132, 0.4);
+}
+
+body.member-modern .lending-page .lending-glance-item.droid {
+    border-color: rgba(232, 96, 103, 0.38);
+}
+
+body.member-modern .lending-page .lending-pills {
+    gap: 10px;
+    margin-bottom: 18px !important;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.28);
+    color: #c7dcff;
+    font-weight: 700;
+    padding: 7px 16px;
+    background: rgba(15, 32, 59, 0.4);
+}
+
+body.member-modern .lending-page .lending-pills .nav-link.active {
+    color: #ffffff;
+    border-color: rgba(128, 170, 255, 0.42);
+    background: linear-gradient(135deg, rgba(47, 102, 233, 0.82) 0%, rgba(34, 182, 255, 0.75) 100%);
+}
+
+body.member-modern .lending-page .lending-plan-core.active {
+    background: linear-gradient(135deg, #2f66e9 0%, #20b7ff 100%);
+}
+
+body.member-modern .lending-page .lending-plan-lime.active {
+    background: linear-gradient(135deg, #0f9a6b 0%, #30d59a 100%);
+}
+
+body.member-modern .lending-page .lending-plan-droid.active {
+    background: linear-gradient(135deg, #d6485c 0%, #ff744e 100%);
+}
+
+body.member-modern .lending-page .lending-tab-pane {
+    margin-top: 4px;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    border: 1px solid rgba(128, 170, 255, 0.2);
+    border-radius: 14px;
+    background: linear-gradient(160deg, rgba(9, 21, 40, 0.55) 0%, rgba(9, 20, 38, 0.4) 100%);
+    backdrop-filter: blur(4px);
+    padding: 14px 12px 10px;
+}
+
+body.member-modern .lending-page .lending-pane-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(128, 170, 255, 0.24);
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin: 0 12px 12px;
+    background: linear-gradient(145deg, rgba(14, 31, 57, 0.86) 0%, rgba(9, 22, 42, 0.86) 100%);
+}
+
+body.member-modern .lending-page .lending-pane-banner .name {
+    color: #e8f1ff;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    margin-right: auto;
+}
+
+body.member-modern .lending-page .lending-pane-banner .meta {
+    color: #bfd5fa;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(128, 170, 255, 0.26);
+    background: rgba(25, 54, 98, 0.35);
+}
+
+body.member-modern .lending-page .lending-pane-banner.core {
+    border-color: rgba(53, 129, 255, 0.42);
+}
+
+body.member-modern .lending-page .lending-pane-banner.lime {
+    border-color: rgba(35, 197, 132, 0.42);
+}
+
+body.member-modern .lending-page .lending-pane-banner.droid {
+    border-color: rgba(232, 96, 103, 0.4);
+}
+
+body.member-modern .lending-page .lending-plan-row {
+    align-items: stretch;
+}
+
+body.member-modern .lending-page .lending-form-col,
+body.member-modern .lending-page .lending-timeline-col {
+    display: flex;
+}
+
+body.member-modern .lending-page .lending-form .form-label {
+    color: #d5e5ff;
+    font-weight: 700;
+}
+
+body.member-modern .lending-page .lending-form {
+    width: 100%;
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 14px;
+    background: linear-gradient(150deg, rgba(11, 25, 48, 0.82) 0%, rgba(13, 30, 56, 0.82) 100%);
+    box-shadow: inset 0 1px 0 rgba(197, 220, 255, 0.08);
+    padding: 18px 18px 16px;
+}
+
+body.member-modern .lending-page .lending-form .lending-field {
+    margin-bottom: 14px !important;
+}
+
+body.member-modern .lending-page .lending-form .form-control[readonly] {
+    color: #bcd4ff !important;
+    font-weight: 700;
+}
+
+body.member-modern .lending-page .lending-form .input-group {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+body.member-modern .lending-page .lending-form .input-group .form-control {
+    border-right: 0 !important;
+}
+
+body.member-modern .lending-page .lending-form .input-group .btn {
+    border-radius: 0 10px 10px 0;
+    border-color: rgba(128, 170, 255, 0.36) !important;
+    color: #d8e8ff !important;
+    background: rgba(20, 42, 76, 0.92) !important;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    min-width: 190px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    border: 0 !important;
+    background: linear-gradient(135deg, #2f66e9 0%, #20b7ff 100%) !important;
+    box-shadow: 0 12px 20px rgba(26, 86, 196, 0.35);
+}
+
+body.member-modern .lending-page .lending-action-row {
+    margin-top: 4px;
+    margin-bottom: 2px !important;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    border: 1px solid rgba(128, 170, 255, 0.22);
+    border-radius: 14px;
+    background: linear-gradient(150deg, rgba(12, 27, 50, 0.9) 0%, rgba(7, 18, 38, 0.88) 100%);
+    box-shadow: inset 0 1px 0 rgba(188, 213, 255, 0.08);
+    width: 100%;
+    margin: 0 !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline > li {
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px dashed rgba(128, 170, 255, 0.2);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline > li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-badge {
+    box-shadow: 0 0 0 4px rgba(40, 95, 182, 0.2);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel span {
+    color: #9eb8e8;
+    font-weight: 600;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 {
+    color: #dbe8ff;
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 strong {
+    font-weight: 800;
+}
+
+body.member-modern .lending-page .lending-core-form {
+    border-color: rgba(72, 144, 255, 0.35);
+}
+
+body.member-modern .lending-page .lending-lime-form {
+    border-color: rgba(73, 205, 143, 0.35);
+}
+
+body.member-modern .lending-page .lending-droid-form {
+    border-color: rgba(236, 112, 96, 0.32);
+}
+
+body.member-modern .lending-page .lending-core-timeline {
+    border-left: 3px solid rgba(53, 129, 255, 0.62);
+}
+
+body.member-modern .lending-page .lending-lime-timeline {
+    border-left: 3px solid rgba(35, 197, 132, 0.62);
+}
+
+body.member-modern .lending-page .lending-droid-timeline {
+    border-left: 3px solid rgba(232, 96, 103, 0.62);
+}
+
+body.member-modern .lending-page .lending-core-btn {
+    background: linear-gradient(135deg, #2f66e9 0%, #20b7ff 100%) !important;
+}
+
+body.member-modern .lending-page .lending-lime-btn {
+    background: linear-gradient(135deg, #0f9a6b 0%, #30d59a 100%) !important;
+}
+
+body.member-modern .lending-page .lending-droid-btn {
+    background: linear-gradient(135deg, #d6485c 0%, #ff744e 100%) !important;
+}
+
+body.member-modern .lending-page .lending-core-btn,
+body.member-modern .lending-page .lending-lime-btn,
+body.member-modern .lending-page .lending-droid-btn {
+    color: #ffffff !important;
+    box-shadow: 0 12px 20px rgba(18, 32, 64, 0.35);
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-heading-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body.member-modern .lending-page .lending-body {
+        padding: 18px 14px 20px;
+    }
+
+    body.member-modern .lending-page .lending-plan-glance {
+        grid-template-columns: 1fr;
+    }
+
+    body.member-modern .lending-page .lending-market-strip {
+        margin-bottom: 12px;
+    }
+
+    body.member-modern .lending-page .lending-tab-content {
+        padding: 10px 8px 8px;
+    }
+
+    body.member-modern .lending-page .lending-pane-banner {
+        flex-wrap: wrap;
+        margin: 0 6px 10px;
+    }
+
+    body.member-modern .lending-page .lending-form {
+        padding: 14px;
+    }
+
+    body.member-modern .lending-page .lending-submit-btn {
+        min-width: 100%;
+    }
+
+    body.member-modern .lending-page .lending-timeline {
+        margin-top: 10px !important;
+    }
+}
+
+/* Lending page polish v2 */
+body.member-modern .lending-page .lending-basic-form {
+    border: 1px solid rgba(128, 170, 255, 0.16);
+    border-radius: 16px;
+    background: linear-gradient(160deg, rgba(9, 21, 42, 0.52) 0%, rgba(8, 18, 36, 0.42) 100%);
+    padding: 14px;
+}
+
+body.member-modern .lending-page .lending-market-strip .pill {
+    position: relative;
+    padding-left: 22px;
+}
+
+body.member-modern .lending-page .lending-market-strip .pill::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #6dc3ff;
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px rgba(109, 195, 255, 0.7);
+}
+
+body.member-modern .lending-page .lending-pills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body.member-modern .lending-page .lending-pills .nav-item {
+    flex: 1 1 180px;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+body.member-modern .lending-page .lending-pane-banner .meta {
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    min-height: 44px;
+}
+
+body.member-modern .lending-page .lending-action-row {
+    text-align: right;
+}
+
+body.member-modern .lending-page .lending-action-row .lending-submit-btn {
+    min-width: 220px;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    display: block;
+    border: 1px solid rgba(128, 170, 255, 0.18);
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: rgba(14, 30, 57, 0.62);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline > li {
+    border-bottom: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-basic-form {
+        padding: 10px;
+    }
+
+    body.member-modern .lending-page .lending-pills .nav-item {
+        flex: 1 1 100%;
+    }
+
+    body.member-modern .lending-page .lending-action-row .lending-submit-btn {
+        min-width: 100%;
+    }
+}
+
+/* Lending page polish v3 */
+body.member-modern .lending-page .lending-main-card .lending-header {
+    border-bottom: 1px solid rgba(128, 170, 255, 0.2) !important;
+    background: linear-gradient(160deg, rgba(20, 44, 80, 0.68) 0%, rgba(11, 25, 47, 0.6) 100%);
+}
+
+body.member-modern .lending-page .lending-heading-wrap .card-title {
+    font-size: 1.2rem;
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    max-width: 460px;
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    gap: 10px;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    position: relative;
+    overflow: hidden;
+}
+
+body.member-modern .lending-page .lending-glance-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 80%);
+    pointer-events: none;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    border-color: rgba(128, 170, 255, 0.26);
+}
+
+body.member-modern .lending-page .lending-core-pane .lending-pane-banner {
+    background: linear-gradient(140deg, rgba(47, 102, 233, 0.18) 0%, rgba(14, 31, 57, 0.85) 65%);
+}
+
+body.member-modern .lending-page .lending-lime-pane .lending-pane-banner {
+    background: linear-gradient(140deg, rgba(18, 158, 110, 0.18) 0%, rgba(14, 31, 57, 0.85) 65%);
+}
+
+body.member-modern .lending-page .lending-droid-pane .lending-pane-banner {
+    background: linear-gradient(140deg, rgba(214, 72, 92, 0.18) 0%, rgba(14, 31, 57, 0.85) 65%);
+}
+
+body.member-modern .lending-page .lending-form .form-label {
+    font-size: 0.84rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+body.member-modern .lending-page .lending-form .text-danger {
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-badge.primary {
+    background: #3c7cff;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-badge.info {
+    background: #36b7ff;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-badge.success {
+    background: #2ccf94;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-badge.warning {
+    background: #f0b24a;
+}
+
+/* Lending page polish v4 */
+body.member-modern .lending-page .lending-main-card {
+    border-color: rgba(141, 181, 255, 0.3);
+}
+
+body.member-modern .lending-page .lending-main-card .card-title {
+    font-size: 1.26rem;
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    margin-bottom: 12px;
+}
+
+body.member-modern .lending-page .lending-market-strip {
+    margin-bottom: 18px;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+body.member-modern .lending-page .lending-tab-pane {
+    border-radius: 12px;
+}
+
+body.member-modern .lending-page .lending-form {
+    min-height: 100%;
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    font-weight: 700;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    text-transform: uppercase;
+    font-size: 0.79rem;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    min-height: 100%;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel:hover {
+    border-color: rgba(145, 185, 255, 0.42);
+    background: rgba(20, 42, 78, 0.78);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 .text-primary {
+    color: #78b3ff !important;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 .text-warning {
+    color: #ffc96c !important;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 .text-danger {
+    color: #ff8d8d !important;
+}
+
+/* Lending page polish v5 */
+body.member-modern .lending-page .lending-basic-form {
+    border-color: rgba(146, 186, 255, 0.22);
+    box-shadow: inset 0 1px 0 rgba(214, 230, 255, 0.05);
+}
+
+body.member-modern .lending-page .lending-header {
+    border-radius: 16px 16px 0 0;
+}
+
+body.member-modern .lending-page .lending-plan-glance .lending-glance-item strong {
+    font-size: 0.98rem;
+    letter-spacing: 0.3px;
+}
+
+body.member-modern .lending-page .lending-market-strip .pill {
+    background: linear-gradient(145deg, rgba(36, 77, 138, 0.34) 0%, rgba(20, 43, 77, 0.34) 100%);
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    padding: 16px 14px 12px;
+}
+
+body.member-modern .lending-page .lending-pane-banner {
+    padding: 11px 13px;
+    border-width: 1px;
+}
+
+body.member-modern .lending-page .lending-pane-banner .meta {
+    font-size: 0.74rem;
+}
+
+body.member-modern .lending-page .lending-form {
+    border-color: rgba(146, 186, 255, 0.24);
+}
+
+body.member-modern .lending-page .lending-form .input-group .btn {
+    min-width: 78px;
+    font-weight: 700;
+}
+
+body.member-modern .lending-page .lending-action-row {
+    padding-top: 2px;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    border-radius: 11px;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    border-color: rgba(146, 186, 255, 0.24);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel span {
+    letter-spacing: 0.2px;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 {
+    font-size: 0.93rem;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-tab-content {
+        padding: 10px 8px 10px;
+    }
+
+    body.member-modern .lending-page .lending-pane-banner .meta {
+        font-size: 0.72rem;
+    }
+}
+
+/* Lending page polish v6 */
+body.member-modern .lending-page .lending-main-card {
+    background: linear-gradient(160deg, rgba(18, 39, 72, 0.95) 0%, rgba(9, 22, 43, 0.95) 100%);
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.34);
+}
+
+body.member-modern .lending-page .lending-shell-card::before {
+    left: 18px;
+    right: 18px;
+    top: -10px;
+    height: 34px;
+    filter: blur(14px);
+}
+
+body.member-modern .lending-page .lending-header {
+    padding: 18px 22px;
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    color: #b7caea;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    border-radius: 14px;
+    padding: 12px 14px;
+}
+
+body.member-modern .lending-page .lending-pills {
+    gap: 8px;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    border-width: 1px;
+    padding: 8px 14px;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    border-radius: 16px;
+}
+
+body.member-modern .lending-page .lending-form,
+body.member-modern .lending-page .lending-timeline {
+    border-radius: 16px;
+}
+
+body.member-modern .lending-page .lending-form {
+    padding: 20px 20px 18px;
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    border-radius: 10px !important;
+}
+
+body.member-modern .lending-page .lending-form .input-group .btn {
+    min-width: 84px;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    min-width: 240px;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-header {
+        padding: 14px 14px;
+    }
+
+    body.member-modern .lending-page .lending-form {
+        padding: 14px;
+    }
+
+    body.member-modern .lending-page .lending-submit-btn {
+        min-width: 100%;
+    }
+}
+
+/* Lending page polish v7 */
+body.member-modern .lending-page .lending-body {
+    padding: 20px 18px 22px;
+}
+
+body.member-modern .lending-page .lending-basic-form {
+    background: linear-gradient(165deg, rgba(10, 24, 46, 0.72) 0%, rgba(8, 19, 36, 0.62) 100%);
+    border-color: rgba(150, 189, 255, 0.2);
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    margin-bottom: 10px;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    background: linear-gradient(155deg, rgba(19, 40, 72, 0.9) 0%, rgba(11, 24, 45, 0.92) 100%);
+}
+
+body.member-modern .lending-page .lending-market-strip {
+    margin-bottom: 14px;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    background: linear-gradient(165deg, rgba(8, 20, 39, 0.7) 0%, rgba(10, 24, 45, 0.58) 100%);
+    border-color: rgba(150, 189, 255, 0.24);
+}
+
+body.member-modern .lending-page .lending-pane-banner {
+    margin-bottom: 10px;
+}
+
+body.member-modern .lending-page .lending-form {
+    background: linear-gradient(160deg, rgba(12, 27, 50, 0.9) 0%, rgba(9, 21, 41, 0.9) 100%);
+}
+
+body.member-modern .lending-page .lending-form .form-control::placeholder {
+    color: #9fb5df !important;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    letter-spacing: 0.55px;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    background: linear-gradient(160deg, rgba(10, 24, 46, 0.95) 0%, rgba(7, 18, 36, 0.95) 100%);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    background: linear-gradient(160deg, rgba(17, 37, 69, 0.72) 0%, rgba(12, 28, 53, 0.72) 100%);
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-body {
+        padding: 14px 10px 16px;
+    }
+
+    body.member-modern .lending-page .lending-tab-content {
+        padding: 9px 7px 9px;
+    }
+}
+
+/* Lending page polish v8 */
+body.member-modern .lending-page .lending-main-card {
+    border: 1px solid rgba(164, 201, 255, 0.3);
+    background:
+        radial-gradient(520px 180px at 100% 0%, rgba(47, 102, 233, 0.2), transparent 60%),
+        linear-gradient(165deg, rgba(14, 31, 58, 0.96) 0%, rgba(8, 20, 39, 0.96) 100%);
+}
+
+body.member-modern .lending-page .lending-header {
+    background: linear-gradient(155deg, rgba(24, 52, 94, 0.72) 0%, rgba(13, 29, 55, 0.66) 100%);
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    font-size: 0.86rem;
+    line-height: 1.55;
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    gap: 8px;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    border-color: rgba(164, 201, 255, 0.28);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+body.member-modern .lending-page .lending-market-strip .pill {
+    border-color: rgba(164, 201, 255, 0.28);
+    color: #cfe0ff;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    background: rgba(16, 36, 66, 0.64);
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    border-color: rgba(164, 201, 255, 0.26);
+    box-shadow: inset 0 1px 0 rgba(210, 227, 255, 0.05);
+}
+
+body.member-modern .lending-page .lending-pane-banner {
+    border-color: rgba(164, 201, 255, 0.28);
+}
+
+body.member-modern .lending-page .lending-form {
+    border-color: rgba(164, 201, 255, 0.24);
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    background: rgba(12, 27, 50, 0.85) !important;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    border-color: rgba(164, 201, 255, 0.24);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    border-color: rgba(164, 201, 255, 0.22);
+}
+
+body.member-modern .lending-page .lending-core-btn,
+body.member-modern .lending-page .lending-lime-btn,
+body.member-modern .lending-page .lending-droid-btn {
+    filter: saturate(1.06);
+}
+
+/* Lending page polish v9 */
+body.member-modern .lending-page .lending-main-card {
+    border-color: rgba(175, 210, 255, 0.34);
+}
+
+body.member-modern .lending-page .lending-heading-wrap {
+    gap: 10px;
+}
+
+body.member-modern .lending-page .lending-main-card .card-title {
+    letter-spacing: 0.35px;
+}
+
+body.member-modern .lending-page .lending-plan-glance .lending-glance-item {
+    border-width: 1px;
+    backdrop-filter: blur(2px);
+}
+
+body.member-modern .lending-page .lending-market-strip {
+    gap: 7px;
+}
+
+body.member-modern .lending-page .lending-market-strip .pill {
+    padding: 6px 12px 6px 22px;
+    font-size: 0.74rem;
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    border-color: rgba(175, 210, 255, 0.3);
+}
+
+body.member-modern .lending-page .lending-core-pane .lending-pane-banner,
+body.member-modern .lending-page .lending-lime-pane .lending-pane-banner,
+body.member-modern .lending-page .lending-droid-pane .lending-pane-banner {
+    box-shadow: inset 0 1px 0 rgba(214, 231, 255, 0.08);
+}
+
+body.member-modern .lending-page .lending-form .form-label {
+    color: #dce9ff;
+}
+
+body.member-modern .lending-page .lending-form .input-group .btn {
+    border-left: 0 !important;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    font-size: 0.78rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    background: rgba(16, 35, 66, 0.78);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel span {
+    color: #b8cff3;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 {
+    color: #e5efff;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-plan-glance .lending-glance-item {
+        padding: 11px 12px;
+    }
+
+    body.member-modern .lending-page .lending-market-strip .pill {
+        font-size: 0.72rem;
+    }
+}
+
+/* Lending page polish v10 */
+body.member-modern .lending-page .lending-main-card {
+    border-radius: 18px;
+    background:
+        radial-gradient(600px 200px at 10% -10%, rgba(30, 182, 255, 0.22), transparent 60%),
+        linear-gradient(170deg, rgba(13, 30, 56, 0.97) 0%, rgba(8, 20, 39, 0.97) 100%);
+}
+
+body.member-modern .lending-page .lending-header {
+    padding: 20px 22px;
+}
+
+body.member-modern .lending-page .lending-main-card .card-title {
+    font-size: 1.3rem;
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    color: #c3d5f2;
+}
+
+body.member-modern .lending-page .lending-plan-glance {
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+body.member-modern .lending-page .lending-glance-item {
+    border-radius: 16px;
+    border-color: rgba(186, 217, 255, 0.3);
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    border-radius: 18px;
+    padding: 14px 12px 12px;
+}
+
+body.member-modern .lending-page .lending-pane-banner {
+    border-radius: 14px;
+}
+
+body.member-modern .lending-page .lending-form {
+    border-radius: 16px;
+    padding: 18px;
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    min-height: 46px;
+    font-size: 0.92rem;
+}
+
+body.member-modern .lending-page .lending-submit-btn {
+    border-radius: 12px;
+    font-size: 0.77rem;
+    min-width: 230px;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    border-radius: 16px;
+    padding: 14px !important;
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    border-radius: 12px;
+    padding: 12px 13px;
+}
+
+@media (max-width: 991px) {
+    body.member-modern .lending-page .lending-header {
+        padding: 14px 14px;
+    }
+
+    body.member-modern .lending-page .lending-tab-content {
+        border-radius: 14px;
+    }
+
+    body.member-modern .lending-page .lending-form,
+    body.member-modern .lending-page .lending-timeline {
+        border-radius: 14px;
+    }
+}
+
+/* Lending page polish v11 */
+body.member-modern .lending-page .lending-main-card {
+    background:
+        radial-gradient(540px 220px at 0% 0%, rgba(38, 109, 242, 0.24), transparent 62%),
+        radial-gradient(480px 180px at 100% 100%, rgba(19, 157, 112, 0.16), transparent 64%),
+        linear-gradient(170deg, rgba(11, 28, 52, 0.98) 0%, rgba(7, 18, 34, 0.98) 100%);
+}
+
+body.member-modern .lending-page .lending-shell-card::before {
+    background: linear-gradient(90deg, rgba(56, 125, 248, 0.42) 0%, rgba(51, 191, 255, 0.28) 45%, rgba(43, 211, 150, 0.22) 100%);
+}
+
+body.member-modern .lending-page .lending-main-card .card-title {
+    color: #f1f6ff;
+}
+
+body.member-modern .lending-page .lending-subtitle {
+    color: #d2e2fb;
+}
+
+body.member-modern .lending-page .lending-plan-glance .lending-glance-item {
+    border-color: rgba(193, 222, 255, 0.34);
+}
+
+body.member-modern .lending-page .lending-pills .nav-link {
+    background: linear-gradient(150deg, rgba(18, 40, 72, 0.84) 0%, rgba(11, 25, 48, 0.84) 100%);
+    color: #d8e8ff;
+}
+
+body.member-modern .lending-page .lending-tab-content {
+    background: linear-gradient(165deg, rgba(8, 20, 38, 0.78) 0%, rgba(10, 24, 45, 0.68) 100%);
+}
+
+body.member-modern .lending-page .lending-pane-banner .name {
+    color: #f0f6ff;
+}
+
+body.member-modern .lending-page .lending-form {
+    border-color: rgba(193, 222, 255, 0.3);
+}
+
+body.member-modern .lending-page .lending-form .form-control {
+    border-color: rgba(167, 204, 255, 0.42) !important;
+}
+
+body.member-modern .lending-page .lending-form .input-group .btn {
+    border-color: rgba(167, 204, 255, 0.42) !important;
+}
+
+body.member-modern .lending-page .lending-timeline {
+    border-color: rgba(193, 222, 255, 0.3);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel {
+    border-color: rgba(193, 222, 255, 0.25);
+}
+
+body.member-modern .lending-page .lending-timeline .timeline-panel h6 {
+    color: #edf5ff;
+}

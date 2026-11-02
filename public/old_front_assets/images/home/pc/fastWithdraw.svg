@@ -1,0 +1,36 @@
+<svg width="78.000000" height="82.000000" viewBox="0 0 78 82" fill="none"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<filter id="filter_1_1244_dd" x="0.000000" y="0.000000" width="78.000000" height="82.000000"
+			filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+			<feOffset dx="0" dy="4" />
+			<feGaussianBlur stdDeviation="3" />
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1" />
+			<feColorMatrix type="matrix"
+				values="0 0 0 0 0.72549 0 0 0 0 0.65098 0 0 0 0 0.58824 0 0 0 0.5 0" />
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1" />
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape" />
+		</filter>
+		<linearGradient x1="57.721382" y1="15.394655" x2="47.150860" y2="49.075108"
+			id="paint_linear_1_1244_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#C48D5E" />
+			<stop offset="1.000000" stop-color="#98653A" />
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_1_1244_dd)">
+		<mask id="mask_1_1244" fill="white">
+			<path id="形状结合备份"
+				d="M36 15.2427L36 37.4854C36 39.1421 37.3433 40.4854 39 40.4854C40.6567 40.4854 42 39.1421 42 37.4854L42 15.2427L45.3638 18.6064C46.5356 19.7783 48.4351 19.7783 49.6064 18.6064C50.7783 17.4351 50.7783 15.5356 49.6064 14.3638L41.1211 5.87891C39.9497 4.70703 38.0503 4.70703 36.8789 5.87891L28.3936 14.3638C27.2217 15.5356 27.2217 17.4351 28.3936 18.6064C29.5649 19.7783 31.4644 19.7783 32.6362 18.6064L36 15.2427ZM20 25L15 25C11.6865 25 9 27.686 9 31L9 63C9 66.3135 11.6865 69 15 69L63 69C66.3135 69 69 66.3135 69 63L69 31C69 27.686 66.3135 25 63 25L58 25C56.3433 25 55 26.3433 55 28C55 29.6567 56.3433 31 58 31L61 31C62.1045 31 63 31.8955 63 33L63 61C63 62.1045 62.1045 63 61 63L17 63C15.8955 63 15 62.1045 15 61L15 33C15 31.8955 15.8955 31 17 31L20 31C21.6567 31 23 29.6567 23 28C23 26.3433 21.6567 25 20 25ZM28 48L52 48C53.6567 48 55 49.3433 55 51C55 52.6567 53.6567 54 52 54L28 54C26.3433 54 25 52.6567 25 51C25 49.3433 26.3433 48 28 48Z"
+				clip-rule="evenodd" fill="" fill-opacity="1.000000" fill-rule="evenodd" />
+		</mask>
+		<path id="形状结合备份"
+			d="M36 15.2427L36 37.4854C36 39.1421 37.3433 40.4854 39 40.4854C40.6567 40.4854 42 39.1421 42 37.4854L42 15.2427L45.3638 18.6064C46.5356 19.7783 48.4351 19.7783 49.6064 18.6064C50.7783 17.4351 50.7783 15.5356 49.6064 14.3638L41.1211 5.87891C39.9497 4.70703 38.0503 4.70703 36.8789 5.87891L28.3936 14.3638C27.2217 15.5356 27.2217 17.4351 28.3936 18.6064C29.5649 19.7783 31.4644 19.7783 32.6362 18.6064L36 15.2427ZM20 25L15 25C11.6865 25 9 27.686 9 31L9 63C9 66.3135 11.6865 69 15 69L63 69C66.3135 69 69 66.3135 69 63L69 31C69 27.686 66.3135 25 63 25L58 25C56.3433 25 55 26.3433 55 28C55 29.6567 56.3433 31 58 31L61 31C62.1045 31 63 31.8955 63 33L63 61C63 62.1045 62.1045 63 61 63L17 63C15.8955 63 15 62.1045 15 61L15 33C15 31.8955 15.8955 31 17 31L20 31C21.6567 31 23 29.6567 23 28C23 26.3433 21.6567 25 20 25ZM28 48L52 48C53.6567 48 55 49.3433 55 51C55 52.6567 53.6567 54 52 54L28 54C26.3433 54 25 52.6567 25 51C25 49.3433 26.3433 48 28 48Z"
+			clip-rule="evenodd" fill="url(#paint_linear_1_1244_0)" fill-opacity="1.000000"
+			fill-rule="evenodd" mask="url(#mask_1_1244)" />
+		<path id="形状结合备份" d="" clip-rule="evenodd" fill="#FFFFFF" fill-opacity="0.000000"
+			fill-rule="evenodd" />
+	</g>
+</svg>

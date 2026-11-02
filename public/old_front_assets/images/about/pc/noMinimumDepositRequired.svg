@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="68px" viewBox="0 0 64 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Market/No Minimum Deposit Required</title>
+    <defs>
+        <filter x="-14.3%" y="-120.0%" width="128.6%" height="340.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="88.6165324%" y1="13.0191369%" x2="44.6676966%" y2="68.7099274%" id="linearGradient-2">
+            <stop stop-color="#F2C59E" offset="0%"></stop>
+            <stop stop-color="#AE7448" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="11" y="4" width="48" height="46" rx="8"></rect>
+        <filter x="-10.4%" y="-13.0%" width="120.8%" height="121.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.230073348   0 0 0 0 0.092312076   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M13,11 L43,11 C47.418278,11 51,14.581722 51,19 L51,47 C51,51.418278 47.418278,55 43,55 L13,55 C8.581722,55 5,51.418278 5,47 L5,19 C5,14.581722 8.581722,11 13,11 Z" id="path-5"></path>
+        <filter x="-2.2%" y="-2.3%" width="104.3%" height="104.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="-1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.734265734 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M10,0 C6.7816092,0 4.29118774,1.28301887 2.52873563,3.9245283 C0.842911877,6.41509434 0,9.77358491 0,14 C0,18.2264151 0.842911877,21.5849057 2.52873563,24.0754717 C4.29118774,26.6792453 6.7816092,28 10,28 C13.1800766,28 15.6704981,26.6792453 17.4712644,24.0754717 C19.1570881,21.5849057 20,18.2264151 20,14 C20,9.77358491 19.1570881,6.41509434 17.4712644,3.9245283 C15.6704981,1.28301887 13.1800766,0 10,0 Z M10,3.73584906 C12.1455939,3.73584906 13.6781609,4.90566038 14.5977011,7.32075472 C15.210728,8.94339623 15.5172414,11.1698113 15.5172414,14 C15.5172414,16.7924528 15.210728,19.0188679 14.5977011,20.6792453 C13.6781609,23.0566038 12.1455939,24.2641509 10,24.2641509 C7.81609195,24.2641509 6.2835249,23.0566038 5.40229885,20.6792453 C4.78927203,19.0188679 4.48275862,16.7924528 4.48275862,14 C4.48275862,11.1698113 4.78927203,8.94339623 5.40229885,7.32075472 C6.2835249,4.90566038 7.81609195,3.73584906 10,3.73584906 Z" id="path-7"></path>
+        <filter x="-27.5%" y="-12.5%" width="155.0%" height="139.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.6346524   0 0 0 0 0.405576565   0 0 0 0 0.27013844  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-25.0%" y="-10.7%" width="150.0%" height="135.7%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.949019608   0 0 0 0 0.77254902   0 0 0 0 0.619607843  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-1125, -652)">
+            <g id="编组-19备份" transform="translate(98, 612)">
+                <g id="Market/Becoming-a-better-trader-with-DBG-Markets备份-6" transform="translate(918, 0)">
+                    <g id="编组-19" transform="translate(32, 40)">
+                        <g id="Icon/Market/No-Minimum-Deposit-Required" transform="translate(77, 0)">
+                            <rect id="矩形" x="0" y="0" width="64" height="64"></rect>
+                            <ellipse id="椭圆形" fill="#F2C59E" opacity="0.5" filter="url(#filter-1)" cx="33" cy="59.5" rx="21" ry="2.5"></ellipse>
+                            <g id="矩形">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <g id="矩形">
+                                <use fill-opacity="0.4" fill="#F2C59E" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="0" transform="translate(18, 19)" fill-rule="nonzero">
+                                <g id="形状">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                    <use fill-opacity="0.88" fill="#000000" xlink:href="#path-7"></use>
+                                    <use fill="#FFFFFF" xlink:href="#path-7"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-7"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
